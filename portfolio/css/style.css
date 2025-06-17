@@ -1,0 +1,130 @@
+/* Basic Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #4527a0;
+  padding: 1rem;
+  color: white;
+}
+
+.navbar h1 {
+  display: inline;
+}
+
+.navbar nav ul {
+  list-style: none;
+  float: right;
+}
+
+.navbar nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #7b1fa2, #512da8);
+  color: white;
+}
+
+.hero .profile-pic {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.hero .btn {
+  padding: 10px 20px;
+  margin: 0.5rem;
+  background: white;
+  color: #512da8;
+  border-radius: 25px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hero .btn.secondary {
+  background: #ede7f6;
+  color: #4527a0;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 0;
+}
+
+.bg-alt {
+  background: #f0f0fa;
+}
+
+.skills-grid, .project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.skills-grid span, .project-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.cert-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cert-list li {
+  margin-bottom: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #512da8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #4527a0;
+  color: white;
+}
