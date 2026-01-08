@@ -1,2 +1,4 @@
-# portfolio
-Just tried  a portfolio
+🔗 Live Portfolio: portfolio.gif
+🎥 Demo Preview ↓  
+![Portfolio Demo](portfolio.gif)
+
