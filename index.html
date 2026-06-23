@@ -1,165 +1,601 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tatikonda Srilekha | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"/>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Srilekha Tatikonda | Software Engineer</title>
+
+  <meta
+    name="description"
+    content="Portfolio of Srilekha Tatikonda - Software Engineer, Backend Developer, Cloud & Blockchain Enthusiast."
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <header class="navbar">
-    <div class="container">
-      <h1>Srilekha Tatikonda</h1>
+  <!-- LOADER -->
+  <div id="loader">
+    <h1 class="loader-text">
+      <span>S</span>
+      <span>R</span>
+      <span>I</span>
+      <span>L</span>
+      <span>E</span>
+      <span>K</span>
+      <span>H</span>
+      <span>A</span>
+    </h1>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor"></div>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress-bar"></div>
+
+  <!-- PARTICLE BACKGROUND -->
+  <div class="bg-grid"></div>
+  <div class="aurora"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar glass">
+    <div class="container nav-container">
+
+      <a href="#" class="logo">
+        <span>&lt;</span>
+        Srilekha
+        <span>/&gt;</span>
+      </a>
+
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav-links">
+
+          <li>
+            <a href="#home">Home</a>
+          </li>
+
+          <li>
+            <a href="#about">About</a>
+          </li>
+
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li>
+            <a href="#articles">Articles</a>
+          </li>
+
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+
         </ul>
       </nav>
+
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
     </div>
   </header>
 
-  <!-- HERO / LANDING -->
-  <section class="hero">
-    <div class="container">
-      <img src="https://imgs.search.brave.com/QdrvwMpP4kK32QJkQK5peaHV1JAMpZyFnFntrchY5N8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/Y29sb3JmdWwtaWxs/dXN0cmF0aW9uLWZl/bWFsZS1wcm9ncmFt/bWVyLXdvcmtpbmdf/MjMtMjE0ODI3NzM5/Ny5qcGc_c2VtdD1h/aXNfaXRlbXNfYm9v/c3RlZCZ3PTc0MA" alt="Srilekha" class="profile-pic" />
-      <h2>Hi, I'm Tatikonda Srilekha</h2>
-      <p>Cloud & Android Developer | Blockchain Enthusiast</p>
-      <div class="buttons">
-        <a href="Sri.pdf" download class="btn">Download Resume</a>
-        <a href="#projects" class="btn secondary">View Projects</a>
+  <!-- HERO -->
+  <section id="home" class="hero">
+
+    <div class="container hero-container">
+
+      <div class="hero-content">
+
+        <span class="hero-badge">
+          Available For Software Engineering Roles
+        </span>
+
+        <h1 class="hero-title">
+          Hi, I'm
+          <span class="gradient-text">
+            Srilekha Tatikonda
+          </span>
+        </h1>
+
+        <h2 class="hero-subtitle">
+          Backend Engineer |
+          Cloud Developer |
+          Blockchain Engineer
+        </h2>
+
+        <p class="hero-description">
+          Computer Science graduate passionate about
+          building scalable backend systems,
+          cloud-native applications,
+          distributed systems,
+          and AI-powered products.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a
+            href="resume.pdf"
+            class="btn primary-btn"
+            download
+          >
+            Download Resume
+          </a>
+
+          <a
+            href="#projects"
+            class="btn secondary-btn"
+          >
+            View Projects
+          </a>
+
+        </div>
+
+        <div class="social-icons">
+
+          <a
+            href="https://github.com/darkspywarrior"
+            target="_blank"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a
+            href="mailto:sreelekhatatikonda@gmail.com"
+          >
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+
+        </div>
+
       </div>
+
+      <div class="hero-image">
+
+        <div class="profile-ring"></div>
+
+        <img
+          src="assets/profile.png"
+          alt="Srilekha"
+          class="profile-image"
+        />
+
+      </div>
+
     </div>
+
+    <a href="#about" class="scroll-down">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+
   </section>
 
   <!-- ABOUT -->
   <section id="about" class="section">
+
     <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I'm a Computer Science student passionate about Cloud Computing (AWS), Android development, and Blockchain technologies. I build efficient, scalable applications with user-centric design and strong problem-solving.
-      </p>
+
+      <h2 class="section-title">
+        About Me
+      </h2>
+
+      <div class="about-grid">
+
+        <div class="about-card glass reveal">
+
+          <h3>
+            Software Engineer
+          </h3>
+
+          <p>
+            Computer Science graduate from
+            VIT-AP University passionate about
+            Backend Development,
+            Cloud Computing,
+            Blockchain,
+            Distributed Systems,
+            and AI Engineering.
+          </p>
+
+        </div>
+
+        <div class="about-card glass reveal">
+
+          <h3>
+            Quick Facts
+          </h3>
+
+          <ul>
+
+            <li>
+              🎓 B.Tech CSE Graduate
+            </li>
+
+            <li>
+              💻 Java & Spring Boot Developer
+            </li>
+
+            <li>
+              ☁️ Cloud & DevOps Enthusiast
+            </li>
+
+            <li>
+              ⛓️ Blockchain Researcher
+            </li>
+
+            <li>
+              🚀 Open To Work
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <div class="stats">
+
+        <div class="stat-card glass">
+          <h2>10+</h2>
+          <p>Projects</p>
+        </div>
+
+        <div class="stat-card glass">
+          <h2>20+</h2>
+          <p>Technologies</p>
+        </div>
+
+        <div class="stat-card glass">
+          <h2>2026</h2>
+          <p>Graduate</p>
+        </div>
+
+      </div>
+
     </div>
+
   </section>
 
   <!-- SKILLS -->
-  <section id="skills" class="section bg-alt">
+  <section id="skills" class="section">
+
     <div class="container">
-      <h2>Skills</h2>
-      <div class="grid skills-grid">
-        <span>Java</span><span>Python</span><span>Kotlin</span><span>SQL</span><span>HTML</span><span>CSS</span>
-        <span>Firebase</span><span>AWS EC2</span><span>AWS Lambda</span><span>Android Studio</span><span>Figma</span><span>Git</span>
-        <span>Solidity</span><span>Web3.js</span><span>Arduino</span><span>ThingSpeak</span>
+
+      <h2 class="section-title">
+        Skills
+      </h2>
+
+      <div class="skills-grid">
+
+        <div class="skill-card glass">
+          <i class="fab fa-java"></i>
+          <span>Java</span>
+        </div>
+
+        <div class="skill-card glass">
+          <i class="fa-brands fa-python"></i>
+          <span>Python</span>
+        </div>
+
+        <div class="skill-card glass">
+          <i class="fa-solid fa-database"></i>
+          <span>SQL</span>
+        </div>
+
+        <div class="skill-card glass">
+          <i class="fa-solid fa-server"></i>
+          <span>Spring Boot</span>
+        </div>
+
+        <div class="skill-card glass">
+          <i class="fab fa-docker"></i>
+          <span>Docker</span>
+        </div>
+
+        <div class="skill-card glass">
+          <i class="fa-solid fa-cloud"></i>
+          <span>AWS</span>
+        </div>
+
+        <div class="skill-card glass">
+          <i class="fa-solid fa-cube"></i>
+          <span>Hyperledger</span>
+        </div>
+
+        <div class="skill-card glass">
+          <i class="fab fa-react"></i>
+          <span>React</span>
+        </div>
+
       </div>
+
     </div>
+
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+
+    <div class="container">
+
+      <h2 class="section-title">
+        Experience
+      </h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item glass">
+          <h3>2026</h3>
+          <p>Backend Software Engineering Projects</p>
+        </div>
+
+        <div class="timeline-item glass">
+          <h3>2025</h3>
+          <p>Blockchain Research & Hyperledger Fabric</p>
+        </div>
+
+        <div class="timeline-item glass">
+          <h3>2024</h3>
+          <p>Android Development</p>
+        </div>
+
+        <div class="timeline-item glass">
+          <h3>2023</h3>
+          <p>Full Stack Development</p>
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="section">
+
     <div class="container">
-      <h2>Projects</h2>
-      <div class="grid project-grid">
-        <div class="project-card">
-          <h3>Health Management App</h3>
-          <p>Android app for hospital management using Firebase.</p>
-        </div>
-        <div class="project-card">
+
+      <h2 class="section-title">
+        Featured Projects
+      </h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card glass">
           <h3>
-            <a href="https://guess-number-two-ashen.vercel.app/" target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
-              Guess number game
-            </a>
+            Hybrid Blockchain Cloud Storage Platform
           </h3>
-          <p>Python, Pygame</p>
+          <p>
+            Hyperledger Fabric based file fingerprinting
+            and secure cloud storage system.
+          </p>
         </div>
-        <div class="project-card">
+
+        <div class="project-card glass">
           <h3>
-            <a href="https://www.figma.com/proto/gvsQuV3j32Q4EXy9uCqYGJ/college-app--Community---Copy-?node-id=403-262&p=f&t=eoGSwhfhObxJNC2F-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
-               target="_blank" rel="noopener noreferrer" 
-               style="text-decoration: none; color: inherit; cursor: pointer;">
-              VIT Meta App
-            </a>
+            High Throughput Data Ingestion Engine
           </h3>
-          <p>App replicating VTOP portal with student/faculty UI.</p>
+          <p>
+            Java microservices application using
+            Kafka, Redis and PostgreSQL.
+          </p>
         </div>
-        <div class="project-card">
-          <h3>Blockchain Certificate System</h3>
-          <p>DApp for issuing academic certificates on Ethereum testnet.</p>
+
+        <div class="project-card glass">
+          <h3>
+            RBAC Management System
+          </h3>
+          <p>
+            Authentication and authorization platform
+            using Spring Boot.
+          </p>
         </div>
+
+        <div class="project-card glass">
+          <h3>
+            Production Task Management Platform
+          </h3>
+          <p>
+            Full stack application with CI/CD and Docker.
+          </p>
+        </div>
+
+        <div class="project-card glass">
+          <h3>
+            Serverless URL Shortener
+          </h3>
+          <p>
+            AWS Lambda based scalable URL shortener.
+          </p>
+        </div>
+
+        <div class="project-card glass">
+          <h3>
+            Blockchain Certificate System
+          </h3>
+          <p>
+            Ethereum based academic certificate
+            verification platform.
+          </p>
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- CERTIFICATIONS -->
-  <section id="certifications" class="section bg-alt">
+  <!-- ARTICLES -->
+  <section id="articles" class="section">
+
     <div class="container">
-      <h2>Certifications</h2>
 
-      <div class="cert-item">
-        <span>Android App Development – IMARTICUS, 2024</span>
-        <a href="https://github.com/sreelekha-ira/portfolio/blob/main/22BCE20420.jpg" target="_blank" rel="noopener noreferrer" class="view-label">Certificate</a>
+      <h2 class="section-title">
+        Technical Articles
+      </h2>
+
+      <div class="articles-grid">
+
+        <div class="article-card glass">
+          Building RBAC Using Spring Boot
+        </div>
+
+        <div class="article-card glass">
+          Getting Started With Hyperledger Fabric
+        </div>
+
+        <div class="article-card glass">
+          Dockerizing Java Microservices
+        </div>
+
+        <div class="article-card glass">
+          Monitoring Using Prometheus & Grafana
+        </div>
+
       </div>
 
-      <div class="cert-item">
-        <span>Hashgraph Developer Course - Hashgraph Association</span>
-        <a href="https://github.com/sreelekha-ira/portfolio/blob/main/certificate.jpg" target="_blank" rel="noopener noreferrer" class="view-label">Certificate</a>
-      </div>
-
-      <div class="cert-item">
-        <span>Blockchain Course - Idc.in / Bharat Blockchain Yatra</span>
-        <a href="https://github.com/sreelekha-ira/portfolio/blob/main/srilekha_tatikonda_certificate.jpg" target="_blank" rel="noopener noreferrer" class="view-label">Certificate</a>
-      </div>
     </div>
-  </section>
 
-  <style>
-    .cert-item {
-      margin-bottom: 15px;
-      font-family: 'Poppins', sans-serif;
-    }
-    .view-label {
-      margin-left: 10px;
-      font-size: 0.9rem;
-      color: #007bff;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-    .view-label:hover {
-      color: #0056b3;
-    }
-  </style>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact" class="section">
+
     <div class="container">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="contact-info">
-        <p>Email: sreelekhatatikonda@gmail.com</p>
-        <p>Phone: +91-7842744121</p>
-        <p>
-          <a href="https://github.com/sreelekha-ira" target="_blank">GitHub</a> |
-          <a href="https://www.linkedin.com/in/sree-lekha-a44126275/" target="_blank">LinkedIn</a>
-        </p>
+
+      <h2 class="section-title">
+        Contact
+      </h2>
+
+      <div class="contact-grid">
+
+        <div class="contact-card glass">
+
+          <h3>
+            Let's Connect
+          </h3>
+
+          <p>
+            Email:
+            sreelekhatatikonda@gmail.com
+          </p>
+
+          <p>
+            Phone:
+            +91 7842744121
+          </p>
+
+          <p>
+            Location:
+            Hyderabad, India
+          </p>
+
+        </div>
+
+        <form class="contact-form glass">
+
+          <input
+            type="text"
+            placeholder="Your Name"
+          />
+
+          <input
+            type="email"
+            placeholder="Your Email"
+          />
+
+          <textarea
+            placeholder="Your Message"
+          ></textarea>
+
+          <button class="btn primary-btn">
+            Send Message
+          </button>
+
+        </form>
+
       </div>
+
     </div>
+
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>Made with ❤️ by Srilekha © 2025</p>
+
+    <div class="container">
+
+      <h3>
+        Srilekha Tatikonda
+      </h3>
+
+      <p>
+        Backend Engineer • Cloud Developer • Blockchain Enthusiast
+      </p>
+
+      <div class="footer-icons">
+
+        <a href="#">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="#">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+      </div>
+
+      <p class="copyright">
+        © 2026 Srilekha Tatikonda. All Rights Reserved.
+      </p>
+
+    </div>
+
   </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
