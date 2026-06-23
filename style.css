@@ -128,3 +128,396 @@ form button {
   background: #4527a0;
   color: white;
 }
+/* ===========================
+   GLOBAL
+=========================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0f172a;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ===========================
+   ANIMATED GRADIENT BG
+=========================== */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+      radial-gradient(circle at 20% 20%, #8b5cf6, transparent 30%),
+      radial-gradient(circle at 80% 20%, #3b82f6, transparent 30%),
+      radial-gradient(circle at 50% 80%, #06b6d4, transparent 30%);
+  filter: blur(120px);
+  animation: aurora 20s infinite alternate;
+  z-index: -2;
+}
+
+@keyframes aurora {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.4);
+  }
+}
+
+/* ===========================
+   FLOAT
+=========================== */
+
+.float {
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ===========================
+   FADE UP
+=========================== */
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ===========================
+   FADE LEFT
+=========================== */
+
+.fade-left {
+  animation: fadeLeft 1s forwards;
+}
+
+@keyframes fadeLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ===========================
+   FADE RIGHT
+=========================== */
+
+.fade-right {
+  animation: fadeRight 1s forwards;
+}
+
+@keyframes fadeRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* ===========================
+   ROTATE
+=========================== */
+
+.rotate {
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ===========================
+   BOUNCE
+=========================== */
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* ===========================
+   PULSE
+=========================== */
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+/* ===========================
+   SHINE BUTTON
+=========================== */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background:
+      linear-gradient(
+          90deg,
+          transparent,
+          rgba(255,255,255,.4),
+          transparent
+      );
+  transform: rotate(35deg);
+  left: -100%;
+  top: -100%;
+  animation: shine 4s infinite;
+}
+
+@keyframes shine {
+  to {
+    left: 100%;
+  }
+}
+
+/* ===========================
+   GLASS
+=========================== */
+
+.glass {
+  background: rgba(255,255,255,.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 25px;
+}
+
+/* ===========================
+   GLOW TEXT
+=========================== */
+
+.glow {
+  text-shadow:
+      0 0 20px #8b5cf6,
+      0 0 40px #8b5cf6;
+}
+
+/* ===========================
+   GRADIENT TEXT
+=========================== */
+
+.gradient-text {
+  background:
+      linear-gradient(
+          90deg,
+          #8b5cf6,
+          #06b6d4,
+          #3b82f6,
+          #8b5cf6
+      );
+
+  background-size: 300%;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: gradient 6s linear infinite;
+}
+
+@keyframes gradient {
+  to {
+    background-position: 300%;
+  }
+}
+
+/* ===========================
+   PROJECT CARD
+=========================== */
+
+.project-card {
+  transition: all .4s;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover {
+  transform:
+      translateY(-15px)
+      rotateX(10deg)
+      rotateY(10deg);
+
+  box-shadow:
+      0 30px 50px rgba(0,0,0,.5);
+}
+
+/* ===========================
+   SCALE
+=========================== */
+
+.scale {
+  animation: scaleAnim 2s infinite;
+}
+
+@keyframes scaleAnim {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* ===========================
+   BLINK
+=========================== */
+
+.blink {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ===========================
+   WAVE
+=========================== */
+
+.wave {
+  display: inline-block;
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* ===========================
+   MARQUEE
+=========================== */
+
+.marquee {
+  white-space: nowrap;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* ===========================
+   SPIN BORDER
+=========================== */
+
+.spin-border {
+  position: relative;
+}
+
+.spin-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background:
+      conic-gradient(
+          #8b5cf6,
+          #06b6d4,
+          #3b82f6,
+          #8b5cf6
+      );
+  z-index: -1;
+  animation: rotate 5s linear infinite;
+}
+
+/* ===========================
+   GRID BACKGROUND
+=========================== */
+
+.grid-bg {
+  background-image:
+      linear-gradient(
+          rgba(255,255,255,.05) 1px,
+          transparent 1px
+      ),
+      linear-gradient(
+          90deg,
+          rgba(255,255,255,.05) 1px,
+          transparent 1px
+      );
+
+  background-size: 40px 40px;
+}
+
+/* ===========================
+   SCROLL BAR
+=========================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:
+      linear-gradient(
+          #8b5cf6,
+          #06b6d4
+      );
+
+  border-radius: 20px;
+}
